@@ -1,5 +1,3 @@
-console.log('client side js is here')
-
 const forecaster = (place, callback) => {
     fetch(`http://localhost:3000/weather?address=${place}`)
     .then((response) =>{
