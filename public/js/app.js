@@ -1,5 +1,5 @@
 const forecaster = (place, callback) => {
-    fetch(`http://localhost:3000/weather?address=${place}`)
+    fetch(`/weather?address=${place}`)
     .then((response) =>{
         response.json().then((data)=>{
             if(data.error){
